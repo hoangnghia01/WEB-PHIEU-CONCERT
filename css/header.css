@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+    height: 70vh;
+    
+}
+#header .header{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #1b273df2;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+}
+#header .header .logo{
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#header .header .logo img{
+    width: 18%;
+}
+#header .header .menu{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#header .header .menu a{
+    margin-right: 20px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+#header .header .menu a:hover{
+    color: #4a25aa;
+    cursor: pointer;
+}
+#header .header .menu button{
+    font-size: 20px;
+    font-family: Bevan, Poppins,sans-serif;
+    color: #4a25aa;
+    width: 110px;
+    height: 40px;
+    background: #e0e721;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#header .header .menu button:hover{
+    color: #fff;
+    border-radius: 20px;
+}
+#header .header .menu .iconmenu{
+    width: 50px;
+    height: 40px;
+    background: #4a25aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#header .header .menu .iconmenu a{
+    text-decoration: none;
+    
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    
+    #header .header .menu .iconmenu{
+        display: flex;
+    }
+    #header .header .menu .iconmenu a{
+        display: block;
+        text-align: center;
+    }
+    #header .header .menu a{
+        display: none;
+    }
+    #header .header .menu button{
+        display: none;
+    }
+}
+#header .baner{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/banner.gif);
+    background-size: 90%;
+}  
+/* #header .baner img{
+    width: 70%;
+} */
+
+#header .baner .time{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#header .baner .time .timee{
+    width: 15%;
+    font-size: 70px;
+    align-items: center;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#header .baner .time .timee p{
+    font-size: 25px;
+    margin-left: 20px;
+}
+/* @media only screen and (max-width: 600px) {
+    #header{
+        width: 100%;
+        height: 40vh; 
+    }
+    #header .header .logo img{
+        width: 48%;
+    }
+    #header .baner .time .timee{
+        font-size: 40px;
+    }
+    #header .baner .time .timee p{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    #header .baner{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 130%;
+    }
+
+} */
+@media only screen and (max-width: 600px){
+    #header .baner {
+        width: 100%;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 155%;
+    }
+    #header{
+        width: 100%;
+        height: 65vh; 
+    }
+    #header .header{
+        width: 100%;
+        height: 13vh;
+    }
+    #header .header .logo img{
+        width: 50%;
+    }
+    #header .baner .time .timee{
+        font-size: 45px;
+    }
+    #header .baner .time .timee p{
+        font-size: 25px;
+        margin-left: 8px;
+    }
+    
+}
+@media only screen and (max-width: 375px){
+    #header .header .menu .iconmenu {
+        width: 40px;
+        height: 35px;
+    }
+    #header .baner {
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 170%;
+    }
+    #header{
+        width: 100%;
+        height: 45vh; 
+    }
+    #header .header{
+        width: 100%;
+        height: 10vh;
+    }
+    #header .header .logo img{
+        width: 48%;
+    }
+    #header .baner .time {
+        width: 90%;
+        height: 298px;
+    }
+    #header .baner .time .timee{
+        font-size: 25px;
+    }
+    #header .baner .time .timee p{
+        font-size: 13px;
+        margin-left: 8px;
+    }
+    
+}

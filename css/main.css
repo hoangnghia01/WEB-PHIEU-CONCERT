@@ -1,0 +1,548 @@
+#info {
+    width: 100%;
+    height: 65vh;
+    padding: 20px 40px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#info .info {
+    width: 100%;
+    height: 50vh;
+    padding: 30px 75px;
+}
+
+#info .info h1 {
+    color: #1b273d;
+    font-family: Bevan, Poppins, sans-serif;
+    font-size: 40px;
+    margin-bottom: 7px;
+}
+
+#info .info p {
+    font-family: Oswald, sans-serif;
+    margin: 25px 0;
+    line-height: 20px;
+
+}
+
+#info .info .diachi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+}
+
+#info .info .diachi .so {
+    width: 50%;
+    height: 110px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+}
+#info .info .diachi .so h1{
+    font-size: 60px;
+    width: 110px;
+    height: 110px;
+    border: 8px solid rgb(157, 153, 214);
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #554bb9;
+}
+
+#info .info .diachi .dc {
+    display: flex;
+    width: 50%;
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+#info .info .diachi .dc p {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#info button {
+    font-size: 20px;
+    font-family: Bevan, Poppins, sans-serif;
+    color: #4a25aa;
+    width: 130px;
+    height: 50px;
+    background: #e0e721;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#info button:hover {
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+
+#slider {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+
+}
+
+#slider::after {
+    content: '';
+    background: #6f42c1;
+    opacity: .1;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    z-index: 0;
+}
+
+#slider::before {
+    position: absolute;
+    content: 'Who will come?';
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    color: #fff;
+    font-size: 60px;
+    top: 85px;
+    left: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#slider {
+    /* background: #eee; */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .swiper {
+    width: 90%;
+    height: 70vh;
+}
+
+#slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider .swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    #slider {
+        position: relative;
+        width: 100%;
+        height: 45vh;
+    }
+
+    #slider .swiper {
+        width: 90%;
+        height: 40vh;
+    }
+
+    #slider .swiper-slide img {
+        display: block;
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+    }
+
+    #slider::after {
+        content: '';
+        background: #6f42c1;
+        opacity: .1;
+        width: 100%;
+        height: 45vh;
+        position: absolute;
+        z-index: 0;
+    }
+
+    #slider::before {
+        position: absolute;
+        content: 'Who will come?';
+        width: 100%;
+        height: 50px;
+        font-size: 40px;
+    }
+}
+
+#products {
+    width: 100%;
+    height: 120vh;
+    background: #554bb9;
+    padding: 50px 140px 20px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#products .row1 {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#products .row1 .product {
+    width: 25%;
+    height: 50vh;
+    overflow: hidden;
+    /* background: yellow; */
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* border: 1px solid  #eb4d4b; */
+    position: relative;
+    z-index: 1;
+}
+
+#products .row1 .product .background {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    transform: rotate(45deg);
+    top: 70%;
+    left: -30%;
+}
+
+#products .product:hover {
+    background: #fff;
+}
+
+#products .product:hover h1 {
+    color: #554bb9;
+}
+
+#products .product:hover .dau {
+    animation: moveup 0.7s linear;
+}
+
+@keyframes moveup {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
+#products .row2 {
+    margin-top: 40px;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#products .row2 .product {
+    width: calc(100% / 3);
+    height: 50vh;
+    overflow: hidden;
+    /* background: yellow; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid  #eb4d4b; */
+}
+
+#products .row2 .product .background {
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 300px;
+    z-index: -1;
+    transform: rotate(45deg);
+    top: 50%;
+    left: -50%;
+}
+
+#products .row1 .product img {
+    width: 40%;
+}
+
+#products .row2 .product img {
+    width: 45%;
+}
+
+#products .product h2 {
+    color: #f9ca24;
+}
+
+#products .row2 .product button {
+    margin-top: 50px;
+}
+
+#products .product button {
+    width: 130px;
+    height: 45px;
+    color: #fff;
+    font-size: 15px;
+    background: #ec398b;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#products .product button:hover {
+    transition: buttun 2s linear;
+    background: #ffc107;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #products {
+        width: 100%;
+        height: 220vh;
+        padding: 20px 40px
+    }
+
+    #products .row1 {
+        overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+        width: 100%;
+        height: 110vh;
+    }
+
+    #products .row1 .product {
+        width: 40%;
+        height: 55vh;
+
+    }
+    #products .row1 .product img {
+        width: 65%;
+    }
+
+    #products .row2 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #products .row2 .product {
+        width: 40%;
+        height: 50vh;
+
+    }
+    #products .row2 .product img {
+        width: 100%;
+    }
+    #products h1{
+        font-size: 20px;
+    }
+    #products h2{
+        font-size: 20px;
+    }
+    #products .product button {
+        width: 110px;
+        height: 40px;
+        color: #fff;
+        font-size: 15px;
+        background: #ec398b;
+        margin-top: 10px;
+    }
+    #products .row2 .product button {
+        margin-top: 22px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #info {
+        width: 100%;
+        height: 80vh;
+        padding: 5px 80px;
+        margin-top: 30px;
+    }
+
+    #info .info {
+        width: 100%;
+        height: 65vh;
+        padding: 5px 10px;
+    }
+    #info .info .diachi{
+        width: 100%;
+        height: 110px;
+        margin-top: 50px;
+    }
+    #info .info p {
+        line-height: 30px;
+    }
+    #slider::before {
+        
+        top: 35px;
+}
+}
+@media only screen and (max-width: 375px){
+    #info {
+        width: 100%;
+        height: 75vh;
+        padding: 5px 30px;
+        margin-top: 20px;
+    }
+
+    #info .info {
+        width: 100%;
+        height: 55vh;
+        padding: 5px 10px;
+    }
+    #info .info .diachi{
+        width: 100%;
+        height: 110px;
+        margin-top: 30px;
+    }
+    #info .info p {
+        line-height: 25px;
+        margin: 15px 0;
+    }
+    #info .info .diachi .dc p {
+        font-size: 15px;
+        width: 100%;
+        height: 80px;
+        display: block;
+    }
+    #info button{
+        margin-top: 40px;
+    
+    }
+    #slider::before {
+        top: 30px;
+    }
+    #products {
+        width: 100%;
+        height: 420vh;
+        padding: 20px 65px;
+    }
+    #products .row1 {
+        width: 100%;
+        height: 240vh;
+        /* display: block; */
+        display: inline-block
+    }
+    #products .row1 .product {
+        width: 100%;
+        height: 60vh;
+    }
+    #products .row1 .product img {
+        width: 55%;
+    }
+    #products .row2 {
+        width: 100%;
+        height: 170vh;
+        /* display: block; */
+        display: inline-block
+    }
+    #products .row2 .product {
+        width: 100%;
+        height: 56vh;
+    }
+    #products .row2 .product img {
+        width: 80%;
+    }
+    #products h1{
+        font-size: 20px;
+    }
+    #products h2{
+        font-size: 20px;
+    }
+    #products .product button {
+        width: 110px;
+        height: 45px;
+        font-size: 13px;
+    }
+    #products .row2 .product button {
+    margin-top: 23px;
+    }
+}
+@media only screen and (max-width: 320px){
+    #info {
+        width: 100%;
+        height: 110vh;
+    }
+    #info button{
+        margin-top: 170px;
+        font-size: 18px;
+        font-family: Bevan, Poppins, sans-serif;
+        color: #4a25aa;
+        width: 116px;
+        height: 43px;
+    }
+    #products .row1 {
+        width: 100%;
+        height: 280vh;
+    }
+    #products .row1 .product {
+        width: 100%;
+        height: 70vh;
+    }
+    #products h1 {
+        font-size: 17px;
+    }
+    #products .product button {
+        width: 86px;
+        height: 40px;
+    }
+    #products{
+        width: 100%;
+        height: 510vh;
+    }
+    #products .row2{
+        width: 100%;
+        height: 213vh;
+    }
+    
+
+    #products .row2 .product {
+        width: 100%;
+        height: 71vh;
+    }
+    #products .row2 .product img {
+        width: 100%;
+    }
+}
